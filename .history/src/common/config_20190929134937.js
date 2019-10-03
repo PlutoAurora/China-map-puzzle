@@ -1,0 +1,1 @@
+export const API = 'https://cyxbsmobile.redrock.team/234/puzzleofthemap/api'

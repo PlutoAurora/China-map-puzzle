@@ -6,31 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-  <title>中国地图拼拼看</title>
+  <title>puzzle-game</title>
   <script>
     // const token =
     //   "eyJyZWRJZCI6IjA0ZDFkNTk1MzNlYTJiODM2N2RlZjYyMmI5MWRlOTVkZmY0ZmRkNzMiLCJoZWFkSW1nVXJsIjoiaHR0cDovL3RoaXJkd3gucWxvZ28uY24vbW1vcGVuL3ZpXzMyL2gxbFZvME4wOEE3UEJUYzlvZU5aWjE2WGxQTXVvZUNYOWQ5WXlaWUJUTHRodDZTUjlCT3NwbkoyVlhBSGdCcThuY0tnWmNGc0RLU1plMktBaWJEQjZzQS8xMzIiLCJuaWNrbmFtZSI6IuWNgeS4gyIsInN0dU51bSI6IjIwMTgyMTEyNTkiLCJyZWFsTmFtZSI6IueOi+aipumjniIsImNvbGxlZ2UiOiLnjrDku6Ppgq7mlL/lrabpmaIiLCJtYWpvciI6IiIsImNsYXNzIjoiMDMxNjE4MDIifQ==.MArwTO0JINq5zSwVxTV5hYcxjyR5WMfznNMEBM2tsUZrDZXzmZK5ACxV8eux7x49n4XDbEA3FWuPZHa615ljB2Xpm1uY2sen3FipbJvDyiftA2DTvhbi2IgYJcer5ljNaDmc2OccszCjmPNC0VHjRdkbArfstf+BaPYPPMIXYkbMuXE5hk3kqy5sUOXFCJiVkN4ktxS84X2fuziAgcDbv1KkiQR6lh+6DqddylDNo5xXP2UoJm1mGXEbWiZh6PWvCCfe7fMcpqoTVdPQWbvnU9Of+egXNGTMtRIyuuhVpwTRG1x8BdN7q5OIUq4h32LRL2XZDQ0U3IiOk31/M20gCA=="
 
     const token = document.location.hash.split('#/?token=')[1];
-    if (!localStorage.getItem('id_token_puzzle') && !token) {
+    if (!localStorage.getItem('id_token') && !token) {
       window.location.href =
-        'https://wx.redrock.team/magicloop/rushb?b=' + encodeURI(
-          'https://wx.redrock.team/wxapi/puzzleofthemap/api/enter') + '&scope=tmpbase';
+        'https://wx.redrock.team/magicloop/rushb?b=https://cyxbsmobile.redrock.team/234/puzzleofthemap/api/enter&scope=tmpbase';
     }
 
     if (token && token.length) {
       document.location.hash = '#/';
-      localStorage.setItem('id_token_puzzle', token)
+      localStorage.setItem('id_token', token)
     }
-  </script>
-  <script>
-    var _hmt = _hmt || [];
-    (function () {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?c4b58ab4b706abaed483ae18a69c106a";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
   </script>
 </head>
 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>puzzle-game</title>
+  <script>
+    const token = document.location.hash.split('#/?token=')[1];
+    if (!localStorage.getItem('id_token') && !token) {
+      window.location.href =
+        'https://wx.redrock.team/magicloop/rushb?b=http://awesomeblog.natapp1.cc/enter&scope=student';
+    }
+    document.location.hash = '#/?refresh=123';
+    if (token && token.length) {
+      document.location.hash = '#/';
+      localStorage.setItem('id_token', token);
+      const {
+        redId,
+        headImgUrl
+      } = JSON.parse(atob(token));
+      localStorage.setItem('redId', redId);
+      localStorage.setItem('headImgUrl', headImgUrl);
+    }
+    // const token = document.location.hash.split('#/?token=')[1]
+    // if ((!localStorage.getItem('id_token')) && !token) {
+    //   window.location.href = 'https://wx.redrock.team/magicloop/rushb?b=http://awesomeblog.natapp1.cc/enter&scope=student'
+    // }
+    // if (token && token.length) {
+    //   document.location.hash = '#/'
+    //   localStorage.setItem('id_token', token)
+    // }
+  </script>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but my doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+
+
+</body>
+
+</html>

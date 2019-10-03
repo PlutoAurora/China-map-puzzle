@@ -1,0 +1,8 @@
+export const SET_FIRST = 'setFirst'
+export const SET_SECOND = 'setSecond'
+export const SET_THIRD = 'setThird'
+export const SET_FOURTH = 'setForth'
+export const CHECK_MINE = 'checkMine'
+export const CHECK_RANK = 'checkRank'
+export const POST_GRADE = 'postGrade'
+export const CHECK_MYGRADE = 'checkMyGrade'

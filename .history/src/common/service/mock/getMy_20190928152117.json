@@ -1,0 +1,25 @@
+{
+    "MyList": [{
+            "Id": 2,
+            "Redid": "04d1d59533ea2b8367def622b91de95dff4fdd73",
+            "Nickname": "十七",
+            "Level": 2,
+            "Second": 31
+        },
+        {
+            "Id": 7,
+            "Redid": "04d1d59533ea2b8367def622b91de95dff4fdd73",
+            "Nickname": "十七",
+            "Level": 3,
+            "Second": 22
+        },
+        {
+            "Id": 8,
+            "Redid": "04d1d59533ea2b8367def622b91de95dff4fdd73",
+            "Nickname": "十七",
+            "Level": 4,
+            "Second": 22
+        }
+    ],
+    "rank": [​0, ​2, ​1, ​1​]
+}
